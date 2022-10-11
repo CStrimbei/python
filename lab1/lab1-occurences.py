@@ -1,5 +1,3 @@
-#non overlapping
-
 
 sb = str(input("Introdu primul sir: ")) 
 s = str(input("Introdu al doilea sir: "))

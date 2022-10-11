@@ -1,10 +1,8 @@
-def usefulBinary(n):
-    return bin(n).replace("0b", "")
-
 def countBits():
     n = int(input("Da-mi un numar: "))
 
-    nbinary = int(usefulBinary(n))
+    nbinary = bin(n)
+    nbinary = int(nbinary[2:])
     #print(nbinary)
     count = 0
 

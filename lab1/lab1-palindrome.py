@@ -8,7 +8,7 @@ def palindrom():
     while n > 0:
         cif = n % 10
         invers = invers * 10 + cif
-        n = int(n / 10)
+        n = n // 10
 
     if aux == invers:
         print("Numarul e palindrom!")

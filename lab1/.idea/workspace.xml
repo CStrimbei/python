@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d37cff5d-8fc3-42ba-bf16-227a30b293a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab1-bits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1-cameltounderscore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1-extract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1-mostcommon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1-wordcount.py" afterDir="false" />
-    </list>
+    <list default="true" id="d37cff5d-8fc3-42ba-bf16-227a30b293a8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Claudiu/Documents/FII/python/lab1"
+    "last_opened_file_path": "C:/Users/Claudiu/Documents/FII/python"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

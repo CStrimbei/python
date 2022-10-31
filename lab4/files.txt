@@ -1,0 +1,3 @@
+C:\Users\Claudiu Strimbei\Documents\Learning\python\lab4\Alune.txt
+C:\Users\Claudiu Strimbei\Documents\Learning\python\lab4\Ana.txt
+C:\Users\Claudiu Strimbei\Documents\Learning\python\lab4\Are.txt

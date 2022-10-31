@@ -24,3 +24,19 @@ def get_files(dir, file):
 print("Ex2")
 print("Am scris in fisierul 'files.txt'")
 get_files('../lab4', 'files.txt')
+
+# Ex3
+
+def get_last_20_chars_rec(my_path):
+    if os.path.isfile(my_path):
+        with open(my_path, 'r') as f:
+            content = f.read()
+            if len(content) > 20:
+                return content[-20:]
+            else:
+                return content
+    else:
+        return 'Not a file'
+
+print("Ex3")
+print(get_last_20_chars_rec('../lab4/Alune.txt'))

@@ -40,3 +40,20 @@ def get_last_20_chars_rec(my_path):
 
 print("Ex3")
 print(get_last_20_chars_rec('../lab4/Alune.txt'))
+
+# Ex 4
+
+
+def get_extensions(dir):
+    extensions = []
+    for file in os.listdir(dir):
+        if os.path.isfile(file):
+            extension = file.split('.')[-1]
+            if extension not in extensions:
+                extensions.append(extension)
+    return sorted(extensions)
+
+print("Ex4")
+print(get_extensions(input()))
+
+# Ex 5

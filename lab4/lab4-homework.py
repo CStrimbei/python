@@ -22,12 +22,12 @@ def get_files(dir, file):
                     f.write(os.path.abspath(file) + '\n')
 
 print("Ex2")
-print("Am scris in fisierul 'files.txt'")
 get_files('../lab4', 'files.txt')
+print("Am scris in fisierul 'files.txt'")
 
 # Ex3
 
-def get_last_20_chars_rec(my_path):
+def get_last_20_chars(my_path):
     if os.path.isfile(my_path):
         with open(my_path, 'r') as f:
             content = f.read()
@@ -39,7 +39,7 @@ def get_last_20_chars_rec(my_path):
         return 'Not a file'
 
 print("Ex3")
-print(get_last_20_chars_rec('../lab4/Alune.txt'))
+print(get_last_20_chars('../lab4/Alune.txt'))
 
 # Ex 4
 

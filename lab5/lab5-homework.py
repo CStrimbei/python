@@ -42,8 +42,6 @@ print(get_vowels_filter("Programming in Python is fun"))
 
 # Ex 4:
 
-# Write a function that receives a variable number of arguments and keyword arguments. The function returns a list containing only the arguments which are dictionaries, containing minimum 2 keys and at least one string key with minimum 3 characters.
-
 def my_function(*args, **kwargs):
     result = []
     result_args = [arg for arg in args if type(arg) == dict and len(arg) >= 2 and any([True for key in arg if type(key) == str and len(key) >= 3])]
@@ -56,7 +54,6 @@ print(my_function({1: 2, 3: 4, 5: 6}, {'a': 5, 'b': 7, 'c': 'e'}, {2: 3}, [1, 2,
 
 # Ex 5:
 
-# Write a function with one parameter which represents a list. The function will return a new list containing all the numbers found in the given list.
 
 def get_numbers(list):
     return [element for element in list if type(element) == int or type(element) == float]

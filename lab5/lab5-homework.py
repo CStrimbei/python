@@ -44,13 +44,40 @@ print(get_vowels_filter("Programming in Python is fun"))
 
 def my_function(*args, **kwargs):
     result = []
-    result_args = [arg for arg in args if type(arg) == dict and len(arg) >= 2 and any([True for key in arg if type(key) == str and len(key) >= 3])]
-    result_kwargs = {key: value for key, value in kwargs.items() if type(value) == dict and len(value) >= 2 and any([True for key in value if type(key) == str and len(key) >= 3])}
-    result.extend(result_args)
-    result.append(result_kwargs)
+    for parameter in args:
+        if type(parameter) is dict and len(parameter.keys()) >= 2:
+            for key in parameter.keys():
+                if type(key) is str and len(key) >= 3:
+                    result.append(parameter)
+                    break
+
+    for parameter in kwargs.values():
+        if type(parameter) is dict and len(parameter.keys()) >= 2:
+            for key in parameter.keys():
+                if type(key) is str and len(key) >= 3:
+                    result.append(parameter)
+                    break
     return result
 print("Ex 4: ")
-print(my_function({1: 2, 3: 4, 5: 6}, {'a': 5, 'b': 7, 'c': 'e'}, {2: 3}, [1, 2, 3], {'abc': 4, 'def': 5}, 3764, dictionar={'ab': 4, 'ac': 'abcde', 'fg': 'abc'}, test={1: 1, 'test': True}))
+print(my_function(
+
+ {1: 2, 3: 4, 5: 6}, 
+
+ {'a': 5, 'b': 7, 'c': 'e'}, 
+
+ {2: 3}, 
+
+ [1, 2, 3],
+
+ {'abc': 4, 'def': 5},
+
+ 3764,
+
+ dictionar={'ab': 4, 'ac': 'abcde', 'fg': 'abc'},
+
+ test={1: 1, 'test': True}
+
+))
 
 # Ex 5:
 
@@ -70,3 +97,6 @@ def get_pairs(parlist):
 
 print("Ex 6: ")
 print(get_pairs([1, 3, 5, 2, 8, 7, 4, 10, 9, 2]))
+
+# Ex 7:
+

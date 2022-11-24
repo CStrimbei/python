@@ -1,5 +1,4 @@
 # Ex 1:
-# Write a function that extracts the words from a given text as a parameter. A word is defined as a sequence of alpha-numeric characters.
 import os
 import re
 
@@ -20,7 +19,6 @@ print("Ex 1:")
 print(extract_words("Hello, world! 123"))
 
 # Ex 2:
-# Write a function that receives as a parameter a regex string, a text string and a whole number x, and returns those long-length x substrings that match the regular expression.
 
 
 def extract_words_regex(regex, text, x):
@@ -32,7 +30,6 @@ print("Ex 2:")
 print(extract_words_regex(r"\w+", "Hi, world! 123", 5))
 
 # Ex 3:
-# Write a function that receives as a parameter a string of text characters and a list of regular expressions and returns a list of strings that match on at least one regular expression given as a parameter.
 
 def extract_words_regex_list(regex_list, text):
     import re
@@ -45,7 +42,6 @@ print("Ex 3:")
 print(extract_words_regex_list([r"\w+", r"\d+"], "Hi, world! 123"))
 
 # Ex 4:
-# Write a function that receives as a parameter the path to an xml document and an attrs dictionary and returns those elements that have as attributes all the keys in the dictionary and values ​​the corresponding values. For example, if attrs={"class": "url", "name": "url-form", "data-id": "item"} the items selected will be those tags whose attributes are class="url" si name="url-form" si data-id="item".
 
 def extract_elements(path, attrs):
     import xml.etree.ElementTree as ET
@@ -61,7 +57,6 @@ print("Ex 4:")
 print(extract_elements("lab6.xml", {'seven': 'engine'}))
 
 # Ex 5:
-# Write another variant of the function from the previous exercise that returns those elements that have at least one attribute that corresponds to a key-value pair in the dictionary.
 
 def extract_elements(path, attrs):
     import xml.etree.ElementTree as ET
@@ -77,7 +72,6 @@ print("Ex 5:")
 print(extract_elements("lab6.xml", {'seven': 'engine', 'sky': 'happily'}))
 
 # Ex 6:
-# Write a function that, for a text given as a parameter, censures words that begin and end with vowels. Censorship means replacing characters from odd positions with *.
 
 def censor_words(text):
     words = extract_words(text)
@@ -90,7 +84,6 @@ print("Ex 6:")
 print(censor_words("Hello, world! Aeiou, aeiou!"))
 
 # Ex 7:
-# Verify using a regular expression whether a string is a valid CNP.
 
 def is_valid_cnp(cnp):
     import re
@@ -100,7 +93,6 @@ print("Ex 7:")
 print(is_valid_cnp("5010407226719"))
 
 # Ex 8:
-# Write a function that recursively scrolls a directory and displays those files whose name matches a regular expression given as a parameter or contains a string that matches the same expression. Files that satisfy both conditions will be prefixed with ">>"
 
 def find_files(path, regex):
     for (root, directories, files) in os.walk(path):

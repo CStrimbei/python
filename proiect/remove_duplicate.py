@@ -1,7 +1,7 @@
 import os
 import sys
 import hashlib
-
+import filecmp as fc
 # print("Fac hashul")
 def get_hash(path):
     hashobj = hashlib
@@ -30,6 +30,12 @@ def get_duplicate_files(files):
             duplicates.append(hash_dict[hash])
     return duplicates
 
+def compare_duplicate_files(duplicates):
+    for file in duplicates:
+        if fc.cmp(file[0], file[1]) == False:
+            duplicates.remove(file)
+    return duplicates
+
 # print("Remove duplicates")
 def remove_duplicates(duplicates):
     for i, duplicate in enumerate(duplicates, start=1):
@@ -53,7 +59,7 @@ def main():
         print("The given path is not a directory")
         return
     files = get_files(sys.argv[1])
-    duplicates = get_duplicate_files(files)
+    duplicates = compare_duplicate_files(get_duplicate_files(files))
     remove_duplicates(duplicates)
     exit()
 
